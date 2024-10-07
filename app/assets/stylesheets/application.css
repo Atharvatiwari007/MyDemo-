@@ -1,0 +1,67 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ /* Example CSS for body */
+/* Set background image for the entire page */ 
+/* Navbar container styling */
+nav {
+    background-color: rgba(36, 34, 34, 0.9); /* Semi-transparent white background */
+    padding: 15px;
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 20px; /* Space above the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* List styles */
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Align items horizontally */
+    gap: 15px; /* Space between items */
+}
+
+/* List item styles */
+nav li {
+    display: inline; /* Keep list items inline */
+}
+
+/* Link styles */
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #f3f6f8; /* Primary link color */
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background change on hover */
+}
+
+/* Hover effect for links */
+nav a:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+    color: #c4c8cc; /* Darker blue text on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center; /* Center align links */
+    }
+}
+/* app/assets/stylesheets/application.css or footer.css.scss */
+
+
+
+
+
